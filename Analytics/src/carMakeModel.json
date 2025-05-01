@@ -1,0 +1,23 @@
+[
+    {
+      "make": "PERODUA",
+      "models": ["Myvi", "Axia", "Bezza", "Alza"]
+    },
+    {
+      "make": "PROTON",
+      "models": ["Saga", "Persona", "X50", "X70"]
+    },
+    {
+      "make": "TOYOTA",
+      "models": ["Vios", "Hilux", "Corolla Altis", "Yaris"]
+    },
+    {
+      "make": "HONDA",
+      "models": ["City", "Civic", "HR-V", "Accord"]
+    },
+    {
+      "make": "NISSAN",
+      "models": ["Almera", "Serena", "Navara"]
+    }
+  ]
+  
