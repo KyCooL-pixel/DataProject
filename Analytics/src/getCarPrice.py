@@ -2,11 +2,20 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import json
+import os
 
 getModelUrl = "https://www.carbase.my/ism/ajax-get-"
 
-with open('carMakeModel.json', 'r') as f:
-    carMakeModel = json.load(f)  # Returns a list
+# /Users/yeexinjie/DataProject/Analytics/src/getCarPrice.py
+# Get directory of the current script (Analytics/)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'carMakeModel.json')
+print(file_path)
+with open(file_path, 'r') as f:
+    carMakeModel = json.load(f)
+
+# with open('carMakeModel.json', 'r') as f:
+#     carMakeModel = json.load(f)  # Returns a list
 
 def parsePayload(payload):
     soup = BeautifulSoup(payload, 'html.parser')
